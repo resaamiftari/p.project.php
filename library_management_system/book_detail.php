@@ -1,8 +1,8 @@
 <?php
+include 'includes/functions.php';
+include 'config/database.php';
 $page_title = "Book Details - Library Management System";
 include 'includes/header.php';
-include 'config/database.php';
-include 'includes/functions.php';
 
 $book_id = sanitize($_GET['id'] ?? '');
 

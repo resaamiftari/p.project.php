@@ -1,8 +1,8 @@
 <?php
+include 'includes/functions.php';
+include 'config/database.php';
 $page_title = "Dashboard - Library Management System";
 include 'includes/header.php';
-include 'config/database.php';
-include 'includes/functions.php';
 
 requireLogin();
 

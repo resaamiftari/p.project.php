@@ -1,8 +1,8 @@
 <?php
+include 'includes/functions.php';
+include 'config/database.php';
 $page_title = "Browse Books - Library Management System";
 include 'includes/header.php';
-include 'config/database.php';
-include 'includes/functions.php';
 
 $search = sanitize($_GET['search'] ?? '');
 $category = sanitize($_GET['category'] ?? '');

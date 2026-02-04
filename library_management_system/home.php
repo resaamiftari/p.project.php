@@ -1,4 +1,5 @@
 <?php
+include 'includes/functions.php';
 $page_title = "Welcome - Library Management System";
 include 'includes/header.php';
 ?>
