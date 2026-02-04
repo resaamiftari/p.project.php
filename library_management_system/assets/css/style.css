@@ -1,0 +1,448 @@
+/* Custom Styles for Library Management System */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --light-bg: #ecf0f1;
+    --dark-text: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: var(--dark-text);
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #3498db !important;
+}
+
+.dropdown-menu {
+    background-color: #34495e;
+    border: none;
+}
+
+.dropdown-item {
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+/* Book Cards */
+.book-card {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.book-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.book-image-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    height: 250px;
+}
+
+.book-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-image-container img {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #229954;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-outline-primary {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 8px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 8px;
+}
+
+/* Statistics Cards */
+.card.bg-primary,
+.card.bg-success,
+.card.bg-warning {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card.bg-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.card.bg-success {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+.card.bg-warning {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.card-text.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tables */
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--dark-text);
+    color: #fff;
+}
+
+.table th {
+    border: none;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-color: #e0e0e0;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    margin-top: auto;
+}
+
+footer h5 {
+    color: #3498db;
+    font-weight: 700;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+h3 {
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Shadows */
+.shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Pagination */
+.pagination {
+    gap: 5px;
+}
+
+.page-link {
+    border-radius: 6px;
+    border: none;
+    color: var(--secondary-color);
+    background-color: #f0f0f0;
+}
+
+.page-link:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .book-image-container {
+        height: 200px;
+    }
+
+    .card-text.display-4 {
+        font-size: 1.8rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Loading Spinner */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item {
+    color: var(--secondary-color);
+}
+
+.breadcrumb-item.active {
+    color: #666;
+}
+
+/* Modal Overrides */
+.modal-header {
+    background-color: var(--dark-text);
+    color: #fff;
+    border: none;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1);
+}
