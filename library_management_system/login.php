@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="alert alert-info">
                         <strong>Demo Credentials:</strong><br>
                         Username: <code>admin</code><br>
-                        Password: <code>password</code>
+                        Password: <code>admin123</code>
                     </div>
 
                     <form method="POST" action="">
